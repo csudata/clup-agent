@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+target
+._*
+.vscode
+__pycache__
+conf/clup-agent.conf
+logs
+dist/*

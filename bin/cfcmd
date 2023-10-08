@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Create_date: 2018-05-28
+
+
+exec_path=`dirname $0`
+cd $exec_path/../lib
+
+if [ -f cspdapi.py ];then
+    /opt/csu_pyenv/bin/python cspdapi.py $*
+else
+    /opt/csu_pyenv//bin/python cspdapi.pyc $*
+fi

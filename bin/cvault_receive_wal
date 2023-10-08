@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Create_date: 2018-01-08
+#Author: tangcheng
+#Email: tangcheng@cstech.ltd
+#description: CSYun在物理机上的Agent程序
+#Copyright (c) 2018 HangZhou CSTech.Ltd. All rights reserved.
+
+exec_path=`dirname $0`
+cd $exec_path/../lib
+
+if [ -f cvault_receive_wal.py ];then
+    /opt/csu_pyenv/bin/python cvault_receive_wal.py $*
+else
+    /opt/csu_pyenv/bin/python cvault_receive_wal.pyc $*
+fi
